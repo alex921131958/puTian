@@ -1,0 +1,2 @@
+[1128/141418.766:WARNING:minidump_to_upload_parameters.cc(66)] duplicate annotation name metrics_client_id, discarding value a84554e2c807457e9b4e7bce94948a0e
+[1128/141439.793:ERROR:http_transport_win.cc(273)] WinHttpSendRequest: ²Ù×÷³¬Ê± (0x2ee2)

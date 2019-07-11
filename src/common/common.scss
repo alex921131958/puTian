@@ -1,0 +1,108 @@
+//------------------------------------面板宽高-----------------------------------
+$panel-small:30em;
+$panel-middle:32rem;
+$panel-width:32rem;
+$panel-large:35.6rem;
+
+// ------------------------------------字体常量-----------------------------------
+//字体大小
+$font-normal:1.05rem;
+$font-bigger:1.2rem;
+$font-title:1.4rem;
+$font-text:1.4rem;
+$font-number:2.6rem;
+$font-arrow:1.1em;
+//------------------------------------背景常量-----------------------------------
+//左侧折叠框背景
+$bg-red:#d33027;
+$bg-green: #2c8c7f;
+$bg-yellow:#f8b827;
+$bg-blue:#3b90ee;
+$bg-purple: #5d3bad;
+$bg-ginger: #c7d540;
+
+//高亮背景色
+$highlight:#fbe644;   //交评常用色
+$gray:#4f555c;
+$bg-gray:#4a4a4a;
+$bg-panel:#242423;
+$bg-title:#000;
+$bg-active:#111615;
+//panel列表面板颜色
+$panel-green: #242e2c;
+$panel-yellow:#3a3323;
+$panel-blue:#262e38;
+$panel-purple: #262129;
+$panel-ginger: #353626;
+
+$panel-gray: #2f2f2f;
+$panel-black: #000000;
+
+//交评常用色
+$bg-case:#333333;
+$item-active:#4C4614;
+
+$font-case:#707070;
+
+$font-case:#707070;
+$bg-attr:#484000;
+$bg-op:#231F00;
+$bg-panel-left:#2F2F2F;
+$bg-panel-right:#42302F;
+
+$success:#C7D540;
+$warn:#FF6962;
+
+//------------------------------------宽度-----------------------------------
+//宽高度设置
+$sidebar-width: 600px;
+$title-height: 60px;
+$map-height: 640px;
+$index-width: 196px;
+
+/*@media (min-width:1900px){
+  $sidebar-width: 600px;
+}
+
+@media (max-width:1600px){
+  $sidebar-width: 600px;
+}*/
+
+//------------------------------------shadow-----------------------------------
+$shadow-title:0 2px 6px 0 rgba(0, 0, 0, 0.04);
+$shadow-tab: 0 0 0 0 rgba(0, 0, 0, 0.05);
+
+
+//------------------------------------公共class-----------------------------------
+//清除浮动
+@mixin clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+// 重置margin、padding
+@mixin resetHtml {
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// 高斯模糊背景
+@mixin backdropBlur{
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+//list列表样式
+@mixin listStyle{
+  text-align: center;
+  line-height: 25.5px;
+}
+
+

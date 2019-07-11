@@ -1,0 +1,1199 @@
+$font-normal:1.05rem;
+$font-big:1.2rem;
+$font-num:1rem;
+
+div.ivu-input-number {
+  padding: 0;
+  font-size: $font-big;
+  color: #fff;
+  background-color: #121211;
+  border: 2px solid #717170;
+  border-radius: 2px;
+  height: 2.2em;
+  line-height: 2rem;
+  &.ivu-input-number-large{
+    width: 8.6em;
+    height: 2.4em;
+    line-height: 1.8;
+    .ivu-input-number-handler-wrap{
+      .ivu-input-number-handler{
+        .ivu-input-number-handler-down-inner{
+          bottom:-0.2em;
+        }
+        .ivu-input-number-handler-up-inner{
+          bottom:0.2em;
+        }
+      }
+    }
+
+  }
+  .ivu-input-number-handler-up-inner{
+    bottom:-0.2em;
+  }
+  &.ivu-input-number-default{
+    width: 4.6em;
+    height: 2.5em;
+    line-height: 1.8;
+  }
+  &:focus,&:hover{
+    border-color: #717170;
+  }
+  .ivu-input-number-input-wrap{
+    height: 2.2em;
+    line-height: 2em;;
+    background-color: #121211;
+    .ivu-input-number-input {
+      width: 100%;
+      height: 2.2em;
+      //line-height: 2.2em;
+      padding: 0 0.4em;
+      color: #fff;
+      border: 0;
+      border-radius: 1px;
+      transition: all .2s linear;
+      background-color: #121211;
+      //margin-top: 0.1em;
+      &:focus,&:hover{
+        appearance: none;
+        border: none;
+      }
+    }
+  }
+
+  .ivu-input-number-handler-wrap{
+    border-left: none;
+    border-radius: 0;
+    background: #121211;
+    .ivu-input-number-handler{
+      height: 1em;
+      .ivu-input-number-handler-down-inner,.ivu-input-number-handler-up-inner{
+        bottom:0.1em;
+        width: 1.2em;
+        height: 1.2em;
+      }
+      .ivu-input-number-handler-down-inner{
+        bottom:-0.1em;
+      }
+    }
+    .ivu-icon-ios-arrow-up:before{
+      position: absolute;
+      left: 0px;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      border-width: 0.4em;
+      border-style: solid dashed dashed dashed;
+      bottom: 0.3em;
+      border-color: transparent transparent #fff transparent;
+    }
+    .ivu-icon-ios-arrow-down:before{
+      position: absolute;
+      left: 0px;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      border-width: 0.4em;
+      border-style: solid dashed dashed dashed;
+      bottom: 0;
+      border-color: #fff transparent transparent transparent;
+    }
+  }
+  .ivu-input-number-handler-down{
+    border-top: none;
+  }
+
+  &.radio{
+    border: 2px solid #717170;
+    &.ivu-input-number-large{
+      width: 4em;
+      height: 2.2em;
+      line-height: 2rem;
+      .ivu-input-number-input-wrap{
+        height: 2em;
+        .ivu-input-number-input {
+          height: 2em;
+          line-height: 2em;
+          padding: 0 0.4em;
+        }
+      }
+
+      .ivu-input-number-handler-wrap{
+        .ivu-input-number-handler{
+          height: 1em;
+          .ivu-input-number-handler-down-inner,.ivu-input-number-handler-up-inner{
+            bottom:0;
+            top:-0.1rem;
+          }
+          .ivu-input-number-handler-down-inner{
+            bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.index{
+  div.ivu-input-number {
+    border: 1px solid #717170;
+    border-radius: 2px;
+    height: 1.6em;
+    line-height: 1.6rem;
+    width: 2.8em;
+    .ivu-input-number-handler-up-inner{
+      bottom:-0.1em;
+    }
+    &.ivu-input-number-default{
+      width: 2.6em;
+      height: 1.6em;
+      line-height: 1.6;
+    }
+    .ivu-input-number-input-wrap{
+      height: 1.6em;
+      line-height:1.6em;;
+      .ivu-input-number-input {
+        height:1.6em;
+        //line-height: 2.2em;
+      }
+    }
+
+    .ivu-input-number-handler-wrap{
+      width: 0.8em;
+      .ivu-input-number-handler{
+        height: 0.8em;
+        .ivu-input-number-handler-down-inner,.ivu-input-number-handler-up-inner{
+          bottom:0.1em;
+          width: 0.6em;
+          height: 0.6em;
+        }
+      }
+      .ivu-icon-ios-arrow-up:before{
+        position: absolute;
+        left: 2px;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        border-width: 0.3em;
+        border-style: solid dashed dashed dashed;
+        bottom: 0.15em;
+        border-color: transparent transparent #fff transparent;
+      }
+      .ivu-icon-ios-arrow-down:before{
+        position: absolute;
+        left: 2px;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        border-width: 0.3em;
+        border-style: solid dashed dashed dashed;
+        bottom: 0;
+        border-color: #fff transparent transparent transparent;
+      }
+    }
+  }
+}
+
+.large{
+  div.ivu-input-number {
+    width: 8.6em;
+  }
+}
+//button样式覆盖
+div.ivu-btn-group-small{
+  .ivu-btn{
+    width: 3.5em;
+    padding: 0 11px;
+    margin-right: 3px;
+    background-color: #C7D540;
+    border-color: rgba(255,255,255,0);
+    span{
+      color: white;
+
+    }
+  }
+}
+.no-data{
+  div.ivu-btn-group-small{
+    .ivu-btn{
+      padding: 0 11px;
+      margin-right: 3px;
+      background-color: #666666;
+      border-color: rgba(255,255,255,0);
+      span{
+        color: white;
+      }
+    }
+  }
+}
+
+// slide样式覆盖
+div.ivu-slider-input{
+  .ivu-slider-wrap{
+    margin-right: 6.5em;
+    background-color: #999;
+    height: 2px;
+    .ivu-slider-bar{
+      height: 3px;
+      background: #fff;
+    }
+    .ivu-slider-button-wrap{
+      width: 0.6em;
+      height: 1.4em;
+      background-color: #d33027;
+      top:-0.5em;
+      .ivu-tooltip{
+        .ivu-tooltip-rel{
+          .ivu-slider-button{
+            width: 0;
+            height: 0;
+            border: none;
+          }
+        }
+        .ivu-tooltip-popper{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+//checkbox样式覆盖
+.ivu-checkbox-wrapper{
+    font-size: $font-normal;
+  .ivu-checkbox-inner{
+    width: 1.2em;
+    height: 1.2em;
+    border-color: #aaa;
+    background-color: #aaa;
+    &:after {
+      content: '';
+      display: table;
+      width: 0.4em;
+      height: 0.8em;
+      position: absolute;
+      top: 0.05em;
+      left: 0.35em;
+      border: 2px solid #fff;
+      border-top: 0;
+      border-left: 0;
+      transform: rotate(45deg) scale(1);
+      transition: all .2s ease-in-out;
+    }
+  }
+  &.ivu-checkbox-wrapper-checked{
+    .ivu-checkbox-inner{
+      border-color: #d33027;
+      background-color: #d33027;
+    }
+  }
+}
+
+// color-picker
+.ivu-color-picker{
+  .ivu-color-picker-disabled{
+    opacity: 0.95;
+    pointer-events: none;
+  }
+  .ivu-input{
+    width: 5em;
+    height: 2.5em;
+    padding: 4px 7px;
+    font-size: $font-normal;
+    border: 0.15em solid #717170;
+    border-radius: 1px;
+    color: #495060;
+    background-color: #131313;
+    .ivu-color-picker-color{
+      top:0.1em;
+      width: 1.3em;
+      height: 1.3em;
+    }
+  }
+  .ivu-icon{
+    cursor: pointer;
+    top: 0.2em;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+    right: 0.2em;
+  }
+  & > div:first-child:hover .ivu-input {
+    border-color: #717170
+  }
+  &:focus,&:hover{
+    border-color: #717170;
+  }
+  .ivu-select-dropdown{
+    background-color: #4a4a4a;
+    .ivu-color-picker-confirm {
+      border-top: 1px solid #242423;
+    }
+    .ivu-btn-ghost {
+      color: #fdf4f4;
+      background-color: transparent;
+      border-color: #666666;
+    }
+  }
+}
+// switch
+span.ivu-switch{
+  width: 2.6em;
+  height: 1.4em;
+  border: 1px solid #717170;
+  background-color: #717170;
+  &:active:after {
+    width: 1.1em;
+  }
+  &.ivu-switch-checked{
+    border-color: #d33027;
+    background-color: #d33027;
+    &:after {
+      left: 1.2em;
+      top: 0.15em;
+    }
+  }
+  &:after {
+    content: '';
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 1.2em;
+    background-color: #fff;
+    position: absolute;
+    left: 0.3em;
+    top: 0.2em;
+    cursor: pointer;
+    transition: left .2s ease-in-out,width .2s ease-in-out;
+  }
+}
+
+div.ivu-radio-group{
+  font-size: $font-normal;
+  &.disabled{
+    opacity: 0.6;
+    .ivu-radio-group-item{
+      &.ivu-radio-wrapper-checked{
+        .ivu-radio{
+          .ivu-radio-inner{
+            &:after{
+              //background-color: rgba(211, 48, 39, 0.53);
+              background-color: rgba(211, 48, 39, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+  &.transparent-radio{
+    opacity: 0.3
+  }
+  &.time-group{
+    position: relative;
+    left: 0.2em;
+  }
+  .ivu-radio-group-item{
+    margin-left: 1rem;
+    margin-right: 2px;
+    font-size: $font-normal;
+    .ivu-radio{
+      margin-right: 6px;
+      .ivu-radio-inner{
+        width: 1.4rem;
+        height: 1.4rem;
+        top:-0.1rem;
+        &:after{
+
+        }
+      }
+    }
+    &.ivu-radio-wrapper-checked{
+      .ivu-radio{
+        .ivu-radio-inner{
+          border-color: #adadad;
+          &:after{
+            width: 0.8rem;
+            height: 0.8rem;
+            left: 0.25rem;
+            top: 0.25rem;
+            border-radius: 50%;
+            background-color: #d33027;
+          }
+        }
+      }
+    }
+  }
+}
+
+div.traffic-predict{
+  font-size: $font-normal;
+    &.disabled{
+      opacity: 0.6;
+      .ivu-radio-group-item{
+        &.ivu-radio-wrapper-checked{
+          .ivu-radio{
+            .ivu-radio-inner{
+              &:after{
+                background-color: rgba(211, 48, 39, 0.53);
+              }
+            }
+          }
+        }
+      }
+    }
+    &.time-group{
+      position: relative;
+      left: 0.2em;
+    }
+    .ivu-radio-group-item{
+      margin-left: 1rem;
+      margin-right: 2px;
+      font-size: $font-normal;
+      .ivu-radio{
+        margin-right: 6px;
+        .ivu-radio-inner{
+          background-color: #4A4A4A;
+          border: 2px solid #adadad;
+          width: 1.4rem;
+          height: 1.4rem;
+          top:-0.1rem;
+          &:after{
+
+          }
+        }
+      }
+      &.ivu-radio-wrapper-checked{
+        .ivu-radio{
+          .ivu-radio-inner{
+            background-color: #FBE644;
+            border: 2px solid #adadad;
+            //border-color: #adadad;
+            &:after{
+              width: 0.8rem;
+              height: 0.8rem;
+              left: 0.185rem;
+              top: 0.18rem;
+              border-radius: 50%;
+              background-color: #484000;
+            }
+          }
+        }
+      }
+    }
+}
+
+.tab{
+  .list{
+    div.ivu-radio-group{
+      font-size: 0.9rem;
+      .ivu-radio-group-item{
+        font-size: 0.9rem;
+        margin-left: 0.3em;
+        .ivu-radio{
+          margin-right: 0.2em;
+        }
+      }
+    }
+  }
+}
+
+.ivu-checkbox-group{
+  .ivu-checkbox-wrapper {
+    margin-left: 0.5em;
+    margin-right: 2px;
+    .ivu-checkbox{
+      right: 3px;
+    }
+  }
+}
+
+.unique{
+  div.ivu-select{
+    font-size: $font-normal;
+    color: #fff;
+    &.panel{
+      display: inline-block;
+      .ivu-select-selection{
+        background-color: #242000;
+      }
+    }
+    &.ivu-select-disabled{
+      opacity: 0.6;
+    }
+    .ivu-select-selection{
+      background-color: #121211;
+      border: none;
+      border-bottom: 1px solid #fff;
+      border-radius: 1px;
+      height: 2.2em;
+      .ivu-select-input{
+        color:#fff;
+      }
+      .ivu-select-selected-value,.ivu-select-placeholder{
+        font-size: $font-normal;
+        height: 2.2em;
+        line-height: 2.2em;
+        padding-left: 5px;
+        padding-right: 24px;
+      }
+      .ivu-select-arrow{
+        font-size: $font-big;
+      }
+    }
+    .ivu-select-dropdown{
+      background-color: #121211;
+      padding: 0;
+      .ivu-select-dropdown-list{
+        .ivu-select-item{
+          color: #fff;
+          font-size: $font-normal!important;
+          &.ivu-select-item-selected.ivu-select-item-focus,&:hover {
+            background: rgba(74, 74, 74,0.5);
+          }
+          &.ivu-select-item-selected, &.ivu-select-item-selected:hover{
+            background: rgb(74, 74, 74);
+          }
+          &.ivu-select-item-disabled{
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+div.ivu-select{
+  font-size: $font-normal;
+  color: #fff;
+  &.panel{
+    display: inline-block;
+    .ivu-select-selection{
+      background-color: #242000;
+    }
+  }
+  &.ivu-select-disabled{
+    opacity: 0.6;
+  }
+  .ivu-select-selection{
+    background-color: #121211;
+    border: 2px solid #717170;
+    height: 2.6em;
+    .ivu-select-input{
+      color:#fff;
+    }
+    .ivu-select-selected-value,.ivu-select-placeholder{
+      font-size: $font-normal;
+      height: 2.6em;
+      line-height: 2.6em;
+    }
+    .ivu-select-arrow{
+      font-size: $font-big;
+    }
+  }
+  .ivu-select-dropdown{
+    background-color: #121211;
+    padding: 0;
+    .ivu-select-dropdown-list{
+      .ivu-select-item{
+        color: #fff;
+        font-size: $font-normal!important;
+        &.ivu-select-item-selected.ivu-select-item-focus,&:hover {
+          background: rgba(74, 74, 74,0.5);
+        }
+        &.ivu-select-item-selected, &.ivu-select-item-selected:hover{
+          background: rgb(74, 74, 74);
+        }
+        &.ivu-select-item-focus{
+          background: rgba(74, 74, 74,0.5);
+        }
+      }
+    }
+  }
+}
+
+
+div.ivu-table-wrapper{
+  .ivu-table{
+    font-size: 0.9rem;
+    .ivu-table-header{
+      table{
+        th{
+          text-align: center;
+          height:3.5rem;
+          .ivu-table-cell{
+            padding-left: 0.1em;
+            padding-right: 0.1em;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+    .ivu-table-body{
+      table{
+        .ivu-table-tbody{
+          td{
+            text-align: center;
+            height:3.5rem;
+            .ivu-table-cell{
+              padding-left: 0.1em;
+              padding-right: 0.1em;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+.table-container{
+  .ivu-table-wrapper{
+    border: 1px solid #666;
+    .ivu-table{
+      background-color: #2f2f2f;
+      &:after{
+        background-color: #2f2f2f;
+      }
+      &:before{
+        background-color: #2f2f2f;
+      }
+      .ivu-table-header{
+        table{
+          th{
+            background-color: #000;
+            color: #FBE644;
+            border-bottom: 1px solid #2f2f2f;
+            &.red-info-column{
+              background-color: #42302F;
+            }
+            &.red-left-column{
+              background-color: #42302F;
+              text-align: left;
+            }
+            &.red-right-column{
+              background-color: #42302F;
+              text-align: right;
+            }
+          }
+        }
+      }
+      table{
+        td{
+          background-color: #2f2f2f;
+          border-bottom: 1px solid #2f2f2f;
+          color: #ccc;
+        }
+      }
+      .ivu-table-body{
+        table{
+          td{
+            background-color: #2f2f2f;
+            &.red-info-column{
+              background-color: #42302F;
+            }
+            &.red-left-column{
+              background-color: #42302F;
+              text-align: left;
+              border-bottom: 1px solid #412e2d;
+              padding-left: 2px;
+            }
+            &.red-right-column{
+              background-color: #42302F;
+              text-align: right;
+              border-bottom: 1px solid #412e2d;
+              padding-right: 2px;
+            }
+          }
+          .ivu-table-row{
+            &.ivu-table-row-highlight{
+              td{
+                background-color: rgba(255, 234, 70, 0.1);
+                color: #fbe644;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.project{
+  position: relative;
+  border: 0;
+  border-bottom: 0;
+  border-right: 0;
+  //top: 0.35em;
+  .ivu-table{
+    background-color: #000000;
+    //padding: 1px;
+  }
+  .ivu-table:before{
+    height: 0;
+  }
+  .ivu-table:after{
+    width: 0;
+  }
+  .ivu-table-header{
+    table{
+      th{
+        color: #fff;
+        background-color: #000000;
+        border-bottom: 0 solid #e9eaec;
+        .ivu-table-sort i{
+          color: #fff;
+        }
+      }
+    }
+  }
+  .ivu-table-body{
+    background-color: #2f2f2f;
+    table{
+      //td{
+      //  color: #fff;
+      //  background-color: #2f2f2f;
+      //}
+    }
+  }
+  .demo-table-info-row td{
+    color: #fff;
+    background-color: #2f2f2f;
+    border-bottom: 1px solid #3a3a3a;
+  }
+
+  .ivu-table-tip{
+    table{
+      td{
+        /*background-color: #666;
+        color: #262D44;*/
+        background-color: rgba(47, 47, 47, 1);
+        color: #bbb;
+        border-bottom: 0 solid #e9eaec;
+      }
+    }
+    .ivu-table td th{
+      border-bottom: 1px solid #e9eaec;
+    }
+  }
+}
+
+.ivu-table-cell{
+  .ivu-table-sort{
+    width: 10px;
+    margin-left: 0;
+    height: 14px;
+    i{
+      width: 8px;
+      height: 7px;
+      line-height: 7px;
+      color:#fbe644;
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+}
+
+div.ivu-modal{
+  .ivu-modal-content{
+    .ivu-modal-body{
+      .ivu-modal-confirm{
+        .ivu-modal-confirm-body{
+          p{
+            .highlight{
+              color:#fbe644;
+            }
+            .bold{
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+div.ivu-slider{
+    .ivu-slider-wrap{
+      margin-right: 6.5em;
+      background-color: #999;
+      height: 2px;
+      .ivu-slider-bar{
+        height: 3px;
+        background: #fff;
+      }
+      .ivu-slider-button-wrap{
+        width: 0.6em;
+        height: 1.4em;
+        background-color: #d33027;
+        top: -0.5em;
+        .ivu-tooltip{
+          display: none;
+        }
+      }
+    }
+}
+
+div.time-line{
+  &.ivu-slider{
+    .ivu-slider-bar{
+      background-color: #767676;
+    }
+    .ivu-slider-wrap{
+      .ivu-slider-button-wrap{
+        z-index: 1000;
+      }
+    }
+  }
+}
+
+div.timeConf{
+  position: relative;
+  height: 2em;
+  .ivu-slider-wrap{
+    top: -0.5em;
+    margin-right: 0em;
+    //width: 25em;
+    background-color: #fff;
+    .ivu-slider-bar{
+      background: #717170;
+    }
+    .ivu-slider-button-wrap{
+      background-color: #d33027;
+      height: 0em;
+      top: -0.4em;
+      .ivu-tooltip{
+        display: inline;
+      }
+    }
+  }
+}
+
+p{
+  &.ctl-title {
+    text-align: left;
+    font-weight: bolder;
+    & > span {
+      cursor: pointer;
+      letter-spacing: 2px;
+      font-size: 1.1em;
+      .icon-Arrow{
+        position: relative;
+        display: inline-block;
+        font-size: 0.5em;
+        opacity: 0.6;
+        margin-right: 0.5em;
+        transform: rotate(360deg);
+        transition: all ease-in-out 0.3s;
+        &.down{
+          transform: rotate(270deg);
+          transition: all ease-in-out 0.3s;
+          top:-0.1em;
+        }
+      }
+    }
+  }
+}
+
+div.ivu-message{
+  .ivu-icon{
+    font-size: 1.6rem;
+  }
+  span{
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width: 1599px){
+  div.ivu-radio-group{
+    font-size: 12px;
+    .ivu-radio-group-item{
+      margin-left: 0.6rem;
+      margin-right: 2px;
+      font-size: 12px;
+
+    }
+  }
+
+  div.ivu-select{
+    font-size: 12px;
+    .ivu-select-selection{
+      border: 2px solid #717170;
+      height: 2.6em;
+      .ivu-select-selected-value,.ivu-select-placeholder{
+        font-size: 12px;
+        height: 2.6em;
+        line-height: 2.6em;
+      }
+      .ivu-select-arrow{
+        font-size: $font-big;
+      }
+    }
+    .ivu-select-dropdown{
+      .ivu-select-dropdown-list{
+        .ivu-select-item{
+          font-size: 12px!important;
+        }
+      }
+    }
+  }
+  .unique{
+    div.ivu-select{
+      font-size: 12px;
+      .ivu-select-selection{
+        .ivu-select-selected-value,.ivu-select-placeholder{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  div.ivu-input-number {
+    font-size: 14px;
+    color: #fff;
+    border-radius: 2px;
+    &.ivu-input-number-large{
+      width: 8em;
+      height: 2.4em;
+      line-height: 1.8;
+      .ivu-input-number-handler-wrap{
+        .ivu-input-number-handler{
+          .ivu-input-number-handler-down-inner{
+            bottom:-0.2em;
+          }
+          .ivu-input-number-handler-up-inner{
+            bottom:0.2em;
+          }
+        }
+      }
+
+    }
+    .ivu-input-number-handler-up-inner{
+      bottom:-0.2em;
+    }
+  }
+
+  div.ivu-table-wrapper{
+    .ivu-table{
+      font-size: 12px;
+    }
+  }
+
+  div.ivu-checkbox-group{
+    font-size: 12px;
+    .ivu-checkbox-wrapper{
+      font-size: 12px;
+    }
+  }
+
+  .tab{
+    .list{
+      &.double{
+        div.ivu-radio-group{
+          font-size: 12px;
+          .ivu-radio-group-item{
+            font-size: 12px;
+            margin-left: 0.3em;
+            //width: 4.6rem;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            .ivu-radio{
+              margin-right: 0.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:1600px) and (max-width:1910px){
+  div.ivu-radio-group{
+    font-size: 1.05rem;
+    .ivu-radio-group-item{
+      margin-left: 0.6rem;
+      margin-right: 2px;
+      font-size: 1.05rem;
+      .ivu-radio{
+        margin-right: 6px;
+        .ivu-radio-inner{
+          width: 1.4rem;
+          height: 1.4rem;
+          top:-0.1rem;
+          &:after{
+
+          }
+        }
+      }
+    }
+  }
+
+  .unique{
+    div.ivu-select{
+      font-size: 13px;
+      .ivu-select-selection{
+        .ivu-select-selected-value,.ivu-select-placeholder{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  div.ivu-select{
+    font-size: 1.05rem;
+    .ivu-select-selection{
+      border: 2px solid #717170;
+      height: 2.6em;
+      .ivu-select-selected-value,.ivu-select-placeholder{
+        font-size: 1.05rem;
+        height: 2.6em;
+        line-height: 2.6em;
+      }
+      .ivu-select-arrow{
+        font-size: $font-big;
+      }
+    }
+    .ivu-select-dropdown{
+      .ivu-select-dropdown-list{
+        .ivu-select-item{
+          font-size: 1.05rem!important;
+        }
+      }
+    }
+  }
+
+  div.ivu-input-number {
+    font-size: 1.1rem;
+    color: #fff;
+    border-radius: 2px;
+    &.ivu-input-number-large{
+      width: 8em;
+      height: 2.4em;
+      line-height: 1.8;
+      .ivu-input-number-handler-wrap{
+        .ivu-input-number-handler{
+          .ivu-input-number-handler-down-inner{
+            bottom:-0.2em;
+          }
+          .ivu-input-number-handler-up-inner{
+            bottom:0.2em;
+          }
+        }
+      }
+
+    }
+    .ivu-input-number-handler-up-inner{
+      bottom:-0.2em;
+    }
+  }
+
+  div.ivu-table-wrapper{
+    .ivu-table{
+      font-size: 0.95rem;
+    }
+  }
+
+  div.ivu-checkbox-group{
+    font-size: 1.05rem;
+    .ivu-checkbox-wrapper{
+      font-size: 1.05rem;
+    }
+  }
+
+  .tab{
+    .list{
+      &.double{
+        div.ivu-radio-group{
+          font-size: 1.05rem;
+          .ivu-radio-group-item{
+            font-size: 1.05rem;
+            margin-left: 0.3em;
+            //width: 5.1rem;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            .ivu-radio{
+              margin-right: 0.2em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:3000px){
+  .ivu-color-picker{
+    .ivu-color-picker-disabled{
+      opacity: 0.95;
+      pointer-events: none;
+    }
+    .ivu-input{
+      width: 5em;
+      height: 2.5em;
+      padding: 4px 7px;
+      font-size: $font-normal;
+      border: 0.15em solid #717170;
+      border-radius: 1px;
+      color: #495060;
+      background-color: #131313;
+      .ivu-color-picker-color{
+        top:0.2em;
+        width: 1.5em;
+        height: 1.5em;
+      }
+    }
+    .ivu-icon{
+      cursor: pointer;
+      top: 0.2em;
+      width: 1.5em;
+      height: 1.5em;
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+    & > div:first-child:hover .ivu-input {
+      border-color: #717170
+    }
+    &:focus,&:hover{
+      border-color: #717170;
+    }
+    .ivu-select-dropdown{
+      background-color: #4a4a4a;
+      .ivu-color-picker-confirm {
+        border-top: 1px solid #242423;
+      }
+      .ivu-btn-ghost {
+        color: #fdf4f4;
+        background-color: transparent;
+        border-color: #666666;
+      }
+    }
+  }
+
+  div.ivu-select{
+    .ivu-select-selection{
+      border: 2px solid #717170;
+      height: 2.6em;
+      .ivu-select-input{
+        font-size: 24px;
+        height: 2.6em;
+        line-height: 2.6em;
+      }
+      .ivu-select-arrow{
+        font-size: $font-big;
+      }
+    }
+    .ivu-select-dropdown{
+      max-height: 380px;
+      .ivu-color-picker-confirm {
+        border-top: 1px solid #242423;
+      }
+      .ivu-btn-ghost {
+        color: #fdf4f4;
+        background-color: transparent;
+        border-color: #666666;
+      }
+    }
+  }
+}
+
+
