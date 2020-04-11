@@ -44,6 +44,9 @@ export default {
   service:{
     //莆田本地
     root:'//117.51.149.90:8002/putianService/',     //滴滴云
+
+    //test
+
     get login() {
       return this.root + 'user/login'
     },
