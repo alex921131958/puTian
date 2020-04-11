@@ -43,10 +43,7 @@ export default {
 
   service:{
     //莆田本地
-    // root:'//172.20.80.204:8001/putianService/',   //putian
-    // root:'//36.111.84.127:8001/putianService/',     //电信云
     root:'//117.51.149.90:8002/putianService/',     //滴滴云
-    // root:'//172.21.9.187:8001/putianService/',   //测试
     get login() {
       return this.root + 'user/login'
     },
