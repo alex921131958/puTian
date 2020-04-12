@@ -18,23 +18,6 @@ export default {
     maskBgLayer:'0d68b6c5304f4f54b9ddbb564bcbde71',   //底图第二层-加蒙版
     traffic_layers:['7eff30294f6f48adbdc4fdbc70e633f6','999f1f2ba0914189b6da936f067186c0','f3eaa0f4c00743b78a760e822882018e'],
   },
-  // 莆田本地
-  // map_service:'//172.20.80.196/service/solu/',
-  // map: {
-  //   domain: '//172.20.80.196',
-  //   spriteUrl: `//172.20.80.196/minemapapi/v2.0.0/sprite/sprite`,
-  //   fontUrl: `//172.20.80.196/minemapapi/v2.0.0/fonts`,
-  //   solu: 4637,
-  //   token: 'd4b0c0c8ad3f43abbf1b449e059deccc',
-  //   get style() {
-  //     return `//172.20.80.196/service/solu/style/id/${this.solu}`;
-  //   },
-  //   center: [119.01230276903023,25.435871096608345],
-  //   zoom: 12,
-  //   topBgLayer:'dee470fde7774428b5511b1b917c2052',   //最上层地图图层
-  //   maskBgLayer:'f9eeb0f9440b41a78f57aca46b56de44',   //底图第二层-加蒙版
-  //   traffic_layers:['792de9e4354642fe916c730c941236c3','ebe6b3a097e2487680068287ab4c5f09','d133b05974de416087d8e8e69a46e371','52e98bc2d6a8499fa1753d94cd503a7c'],
-  // },
 
   leaflet_map:{
     center: [25.435871096608345,119.01230276903023],
@@ -42,10 +25,6 @@ export default {
   },
 
   service:{
-    //莆田本地
-    // root:'//172.20.80.204:8001/putianService/',   //putian
-    // root:'//36.111.84.127:8001/putianService/',     //电信云
-    // root:'//117.51.149.90:8002/putianService/',     //滴滴云
     root:'//172.21.9.187:8001/putianService/',   //测试
     meituan:'//172.0.0.1', //test
     get login() {
